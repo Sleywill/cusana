@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53F20B4B60CAC68A11FCF495 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56C4B46FB3A9677ECEB903 /* RootView.swift */; };
+		890B065B49745B09B923F8AE /* CusanaWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF6CBCB64D9795C940DC16 /* CusanaWatchApp.swift */; };
+		96DC1E008076C7D187AC7042 /* StatusViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68A5B22F37B5F271D48A13 /* StatusViews.swift */; };
+		C39BA4156D9DECCC4D90FC30 /* SeatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C20B0B43EF06B682B59DB36 /* SeatedView.swift */; };
+		CF1F794229432A1DE1A5DA98 /* CusanaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6885798DC9CBE4B002D2EA35 /* CusanaKit */; };
+		FCE703E783B55C89DD9C96CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940036357B41F986696C4BEF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C20B0B43EF06B682B59DB36 /* SeatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatedView.swift; sourceTree = "<group>"; };
+		2C56C4B46FB3A9677ECEB903 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		363E6067287BE7195FC3ED6F /* CusanaKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CusanaKit; path = CusanaKit; sourceTree = SOURCE_ROOT; };
+		5E68A5B22F37B5F271D48A13 /* StatusViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViews.swift; sourceTree = "<group>"; };
+		70358981D314CDABC3D50B9C /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		940036357B41F986696C4BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7AF6CBCB64D9795C940DC16 /* CusanaWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusanaWatchApp.swift; sourceTree = "<group>"; };
+		EC5D522ECD19EA9C9B006CF7 /* CusanaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CusanaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ABBB546D1608DED1644CB95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F794229432A1DE1A5DA98 /* CusanaKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E42C176DA6419F2477CFA8C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				363E6067287BE7195FC3ED6F /* CusanaKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		3FF5209952790A886C92C8CC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				70358981D314CDABC3D50B9C /* Base.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6A347551E03A5AEA21C301AC /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				BB36655699643C497212D7DD /* Views */,
+				940036357B41F986696C4BEF /* Assets.xcassets */,
+				C7AF6CBCB64D9795C940DC16 /* CusanaWatchApp.swift */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		70832219488B8690DBD07789 = {
+			isa = PBXGroup;
+			children = (
+				3FF5209952790A886C92C8CC /* Config */,
+				3E42C176DA6419F2477CFA8C /* Packages */,
+				6A347551E03A5AEA21C301AC /* WatchApp */,
+				7B6A7A5B2F78501B95F45197 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B6A7A5B2F78501B95F45197 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5D522ECD19EA9C9B006CF7 /* CusanaWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB36655699643C497212D7DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C56C4B46FB3A9677ECEB903 /* RootView.swift */,
+				1C20B0B43EF06B682B59DB36 /* SeatedView.swift */,
+				5E68A5B22F37B5F271D48A13 /* StatusViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BB87780411A1E9BCBAA33E6 /* CusanaWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB1F0F65FE331035DBDBFF9 /* Build configuration list for PBXNativeTarget "CusanaWatch" */;
+			buildPhases = (
+				AFD07FA76C6F779A4D653930 /* Sources */,
+				32E71574E51429627EB5BFE7 /* Resources */,
+				2ABBB546D1608DED1644CB95 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CusanaWatch;
+			packageProductDependencies = (
+				6885798DC9CBE4B002D2EA35 /* CusanaKit */,
+			);
+			productName = CusanaWatch;
+			productReference = EC5D522ECD19EA9C9B006CF7 /* CusanaWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC20E1874D832D61096FB22C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4BB87780411A1E9BCBAA33E6 = {
+						DevelopmentTeam = "$(CUSANA_DEVELOPMENT_TEAM)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E7805487D208CC00C1A971B7 /* Build configuration list for PBXProject "CusanaWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 70832219488B8690DBD07789;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2CE0373E20EA301D7FED9FDF /* XCLocalSwiftPackageReference "CusanaKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BB87780411A1E9BCBAA33E6 /* CusanaWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32E71574E51429627EB5BFE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE703E783B55C89DD9C96CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFD07FA76C6F779A4D653930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890B065B49745B09B923F8AE /* CusanaWatchApp.swift in Sources */,
+				53F20B4B60CAC68A11FCF495 /* RootView.swift in Sources */,
+				C39BA4156D9DECCC4D90FC30 /* SeatedView.swift in Sources */,
+				96DC1E008076C7D187AC7042 /* StatusViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6DDB15233156FF0F1B018293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70358981D314CDABC3D50B9C /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "$(CUSANA_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.sleywil.cusanawatch;
+				PRODUCT_NAME = Cusana;
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		73DDB3B7D76197BAD0562766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_LANGUAGE = en;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		767EEBEFC284403BAAE8CAAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70358981D314CDABC3D50B9C /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "$(CUSANA_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.sleywil.cusanawatch;
+				PRODUCT_NAME = Cusana;
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		7E4888051AC62B5716A87366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_LANGUAGE = en;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB1F0F65FE331035DBDBFF9 /* Build configuration list for PBXNativeTarget "CusanaWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767EEBEFC284403BAAE8CAAB /* Debug */,
+				6DDB15233156FF0F1B018293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E7805487D208CC00C1A971B7 /* Build configuration list for PBXProject "CusanaWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DDB3B7D76197BAD0562766 /* Debug */,
+				7E4888051AC62B5716A87366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		2CE0373E20EA301D7FED9FDF /* XCLocalSwiftPackageReference "CusanaKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CusanaKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6885798DC9CBE4B002D2EA35 /* CusanaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CusanaKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DC20E1874D832D61096FB22C /* Project object */;
+}

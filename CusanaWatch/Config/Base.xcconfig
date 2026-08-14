@@ -1,0 +1,28 @@
+// Cusana Watch — non-secret build configuration.
+//
+// Safe to commit. The access token is NOT here: it lives in Secrets.xcconfig,
+// which is gitignored and optionally included at the bottom of this file.
+//
+// These three values are substituted into Info.plist at build time and read
+// back by CusanaConfig.fromBundle(). No credential is ever a Swift literal.
+
+// Captured from the live web app — see API-CONTRACT.md §1.
+// Note: no "https://" here on purpose. A double slash starts a comment in
+// xcconfig, so the scheme is added in Swift, not in this file.
+CUSANA_API_HOST = cusana-connect-core.base44.app
+
+// localStorage.base44_app_id
+CUSANA_APP_ID = 69fc9f3c47869d944ddbb02b
+
+// Deliberately empty. With no Secrets.xcconfig the app still builds and runs —
+// it shows "Setup needed" instead of failing to compile or sending a
+// placeholder as a bearer token.
+CUSANA_TOKEN =
+
+// Empty is correct for simulator builds. To run on a real watch, set
+// CUSANA_DEVELOPMENT_TEAM in Secrets.xcconfig (it is a private identifier).
+CUSANA_DEVELOPMENT_TEAM =
+
+// Optional include: the build works whether or not this file exists, which is
+// what lets a fresh clone compile before anyone has been handed a token.
+#include? "Secrets.xcconfig"

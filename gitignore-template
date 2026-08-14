@@ -1,0 +1,14 @@
+# Secrets — MUST stay out of git
+Secrets.xcconfig
+*.xcconfig.local
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+.DS_Store
+
+# SPM
+.swiftpm/
+Package.resolved

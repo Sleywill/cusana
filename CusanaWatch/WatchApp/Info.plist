@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Cusana</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+
+	<!-- Standalone watchOS app: no iOS companion, so no
+	     WKCompanionAppBundleIdentifier. -->
+	<key>WKApplication</key>
+	<true/>
+	<key>WKWatchOnly</key>
+	<true/>
+
+	<!-- Cusana configuration, substituted from Config/Base.xcconfig at build
+	     time and read back by CusanaConfig.fromBundle().
+
+	     CusanaAccessToken resolves from Config/Secrets.xcconfig, which is
+	     gitignored. In a clone with no Secrets.xcconfig it resolves to an empty
+	     string and the app shows "Setup needed" — it never ships a literal. -->
+	<key>CusanaAPIHost</key>
+	<string>$(CUSANA_API_HOST)</string>
+	<key>CusanaAppID</key>
+	<string>$(CUSANA_APP_ID)</string>
+	<key>CusanaAccessToken</key>
+	<string>$(CUSANA_TOKEN)</string>
+</dict>
+</plist>
